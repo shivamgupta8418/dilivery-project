@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useContext } from 'react'
 import { Container, Row, Button } from 'reactstrap'
 import { NavLink, Link, useNavigate } from 'react-router-dom'
-import Logo from '../../assets/images/logo.png'
+import Logo from '../../assets/images/texitub.png'
 import "./header.css"
 import { AuthContext } from '../../context/AuthContext'
 
@@ -16,7 +16,7 @@ const nav__links = [
    },
    {
       path: '/tours',
-      display: 'Tours'
+      display: 'Rides'
    },
 ]
 
@@ -56,7 +56,7 @@ const Header = () => {
                <div className="nav__wrapper d-flex align-items-center justify-content-between">
                   {/* ========== LOGO ========== */}
                   <div className="logo">
-                     <img src={Logo} alt="" />
+                     <img src={Logo} alt="" style={{ width: '90px' ,borderRadius:'50%'}} />
                   </div>
                   {/* ========================== */}
 
