@@ -2,6 +2,7 @@ import React from 'react'
 import './newsletter.css'
 import { Container, Row, Col } from 'reactstrap'
 import maleTourist from '../assets/images/male-tourist.png'
+import { Link } from 'react-router-dom'
 
 const NewsLetter = () => {
    return (
@@ -16,7 +17,10 @@ const NewsLetter = () => {
                         <input type="email" placeholder='Enter your email' />
                         <button className="btn newsletter__btn">Subcribe</button>
                      </div>
-                     <p>They are blinded by passions, to provide themselves.Hoping you will surely love the Ride with us.
+                    <Link to="/booking">
+                     <button className="btn newsletter__btn">Book Now</button>
+                    </Link>
+                     <p className='mt-3'>They are blinded by passions, to provide themselves.Hoping you will surely love the Ride with us.
                      </p>
                   </div>
                </Col>
